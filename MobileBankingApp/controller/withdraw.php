@@ -32,10 +32,17 @@ if(isset($_POST['formWithdraw'])){
 	else{
 		$withdraw=$_POST['withdraw'];
 	}
-	$aftrwithdrawt=$balance-$withdraw;
+	if($balance>$withdraw){
+		$aftrwithdrawt=$balance-$withdraw;
+	
+	
 	$statement1 = $db->prepare("update users set balance = ?  where id=?");
 	$statement1->execute(array ($aftrwithdrawt,$id) );
 	echo "After Withdraw".$aftrwithdrawt;
+	}
+	else{
+		echo "Can not withdraw is money";
+	}
 }
 ?>
 <form action="" method="POST">
