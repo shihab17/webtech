@@ -36,8 +36,8 @@
 			<td > <?php echo $i ; ?> </td>
 			<td> <?php echo $row['username']; ?> </td>
 			<td> <?php echo $row['balance']; ?> </td>
-			<td> <a href= "deposit.php?depositId=<?php echo $row['id'] ?>" > Deposit</a> |
-				<a href= "withdraw.php?withdrawId=<?php echo $row['id'] ?>">withdraw </a> 
+			<td> <a href= "../controller/deposit.php?id=<?php echo $row['id'] ?>" > Deposit</a> |
+				<a href= "../controller/withdraw.php?id=<?php echo $row['id'] ?>">withdraw </a> 
 			</td>
 			</tr>
 			<?php
