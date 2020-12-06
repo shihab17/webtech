@@ -1,9 +1,16 @@
 .content{
-	background-color:black;	
+	background-image: url(bg.jpg);
+	 background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
 	text-align: center;
 	padding:120px;
+	font-size:22px;
 }
-.content h1,p{
+.btn{
+	padding:8px;
+	font-size:18px;
+}
+.content h1 {
 	color:white;
 	font-weight:bold;
 	
@@ -21,4 +28,82 @@
 	color:black;
 	font-size:20px;
 }
+.content2{
+	background-color:#2C3E50;
+	height:400px;
+	text-align: center;
+}
+.content2 img{
+	width:200px;
+	height:150px;
+	
+}
+.content2 li{
+	  display: list-item;
+	  
+}
+.content2 ul{
+	list-style:none;
+	margin-left:250px;
+}
+.content2 ul li{
+	float:left;
+}
+.card_box{
+	background-color:white;
+	padding:6px;
+}
+.card{
+	width:200px;
+	height:350px;
+	padding:25px;
+	
+}
+.content3{
+	text-align: center;
+	height:200px;
+	font-size:20px;
+}
+.content3 p{
+	color:black;
+}
+
+.content4{
+	height:400px;
+	text-align: center;
+}
+.content4 li{
+	  display: list-item;
+	  
+}
+.content4 ul{
+	list-style:none;
+}
+.content4 ul li{
+	float:left;
+}
+.box{
+	width:610px;
+	height:300px;
+	font-size:20px;
+	
+}
+#left{
+	background-color:#2690d4;
+	padding:15px;
+}
+#right{
+	background-color:black;
+	color:white;
+	padding:15px;
+}
+.footer{
+	background-color:black;
+	text-align:center;
+	height:100px;
+	color:white;
+	padding:15px;
+}
+    
+
 
