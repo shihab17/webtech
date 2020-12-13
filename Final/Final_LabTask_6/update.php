@@ -31,6 +31,36 @@ include ("dbConn.php");
 <html>
 <head>
 <title>Update</title>
+<script>
+	function validate() {
+		var x = document.getElementById('uname').value;
+		var y = document.getElementById('pass').value;
+		var z = document.getElementById('email').value;
+		var w = document.getElementById('dob').value;
+		// console.log(x);
+		if(x == "") {
+			document.getElementById('errorMsg').innerHTML = "username is empty";
+			document.getElementById('errorMsg').style.color = "red";
+			return false;	
+		}
+		if(y == "") {
+			document.getElementById('errorMsg').innerHTML = "password is empty";
+			document.getElementById('errorMsg').style.color = "red";
+			return false;	
+		}
+		if(z == "") {
+			document.getElementById('errorMsg').innerHTML = "email is empty";
+			document.getElementById('errorMsg').style.color = "red";
+			return false;	
+		}
+		if(w == "") {
+			document.getElementById('errorMsg').innerHTML = "email is empty";
+			document.getElementById('errorMsg').style.color = "red";
+			return false;	
+		}
+		return true;
+	}
+</script>
 </head>
 <body>
 <?php
@@ -45,7 +75,7 @@ include ("dbConn.php");
 	
 ?>
 <h1>User Update Information</h1>
-<form action="" method="POST">
+<form action="" method="POST" onsubmit="return validate()>
 	<label for="uname">Username</label>
 	<input type="text" id="uname" name="uname" value="<?php echo $unameOld; ?>">
 	<br>
